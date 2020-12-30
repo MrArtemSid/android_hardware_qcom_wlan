@@ -895,7 +895,6 @@ wifi_error wifi_virtual_interface_delete(wifi_handle handle,
     return ret;
 }
 
-#ifdef WCNSS_QTI_AOSP
 /**
  * Set latency level
  */
@@ -987,4 +986,3 @@ cleanup:
     delete wifiConfigCommand;
     return (wifi_error)ret;
 }
-#endif
